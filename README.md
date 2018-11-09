@@ -1,0 +1,2 @@
+# lambdb
+Because people tend to write code that only works with databases that support SQL, or worse code that only works with a few DBs or even just 1. Recently this has begun to piss me off. Let me see if i can create a *db proxy. i dont even know where this will end up, but hopefully it makes people less reliant on SQL. maybe in the future SQLfags and JSONfags may live together in harmony and a stack will not be dictated by a single server, software or other faggotry. may the legacy infrastructure live happily ever after in document datastores or relational dbs.
