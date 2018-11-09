@@ -23,25 +23,26 @@ selectStmt << (select +
             ])
         )
  
-def log(sql, parsed):
-    print "##################################################"
-    print sql
-    print parsed.table
-    print parsed.columns
-    print parsed.where
-    print parsed.groupby
-    print parsed.orderby
- 
-sqls = [
-        """select * from users where username='johnabc'""",
-        """SELECT * FROM users WHERE username='johnabc'""",
-        """SELECT * FRom users""",
-        """SELECT * FRom USERS""",
-        """SELECT * FROM users WHERE username='johnabc' or email='johnabc@gmail.com'""",
-        """SELECT id, username, email FROM users WHERE username='johnabc' order by email, id""",
-        """SELECT id, username, email FROM users WHERE username='johnabc' group by school""",
-        """SELECT id, username, email FROM users WHERE username='johnabc' group by city, school order by firstname, lastname"""
-        ]
- 
-for sql in sqls:
-    log(sql, selectStmt.parseString(sql))
+ if __name__=="__main__":
+	def log(sql, parsed):
+		print "##################################################"
+		print sql
+		print parsed.table
+		print parsed.columns
+		print parsed.where
+		print parsed.groupby
+		print parsed.orderby
+	 
+	sqls = [
+			"""select * from users where username='johnabc'""",
+			"""SELECT * FROM users WHERE username='johnabc'""",
+			"""SELECT * FRom users""",
+			"""SELECT * FRom USERS""",
+			"""SELECT * FROM users WHERE username='johnabc' or email='johnabc@gmail.com'""",
+			"""SELECT id, username, email FROM users WHERE username='johnabc' order by email, id""",
+			"""SELECT id, username, email FROM users WHERE username='johnabc' group by school""",
+			"""SELECT id, username, email FROM users WHERE username='johnabc' group by city, school order by firstname, lastname"""
+			]
+	 
+	for sql in sqls:
+		log(sql, selectStmt.parseString(sql))
