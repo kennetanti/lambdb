@@ -17,6 +17,6 @@ we have very strict coding standards for pull requests, they are as follows:
 
 we dont give a fuck, write shit how you want.
 
-then pass it through yapf with the default options. boom, that is all i care about.
+then pass it through yapf with the .style.yapf from this repo. boom, that is all i care about.
 
-oh yeah, but fuck spaces
+and make sure that shit works and shit bruh
